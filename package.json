@@ -1,0 +1,23 @@
+{
+  "name": "lifeline",
+  "version": "1.0.0",
+  "description": "app managing a timeline of event\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dlife events",
+  "main": "src/main.js",
+  "dependencies": {
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoffroyBERNARD/lifeline.git"
+  },
+  "author": "Geoffroy Bernard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeoffroyBERNARD/lifeline/issues"
+  },
+  "homepage": "https://github.com/GeoffroyBERNARD/lifeline#readme"
+}
