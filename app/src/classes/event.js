@@ -15,7 +15,9 @@ class EventType{
 let EVENT_TYPES = {}
 
 
-EVENT_TYPES.DIPLOMA = new EventType("Diploma",require('@/assets/diploma.png')); 
+EVENT_TYPES.DIPLOMA = new EventType("Diploma",require('@/assets/diploma.png'));
+EVENT_TYPES.MOVING = new EventType("Moving",require('@/assets/moving.png'));
+EVENT_TYPES.JOB = new EventType("Job",require('@/assets/job.png')); 
 
 class Event{
     id;
@@ -25,17 +27,13 @@ class Event{
     picture;
     firstOfYear;
     firstOfAllTime;
+    private; // element only visible by creator
 
     constructor(name,date,type,picture){
         this.id = uuidv4();
         this.name = name;
 
-        //use specified date or today if not defined
-        if(date){
-            this.date = new Date(date);
-        } else {
-            this.date = new Date();
-        }
+        this.date = date;
 
         this.type = type;
 
